@@ -1,0 +1,9 @@
+Build and submit a make.fun entry for competition site-generator-speed-01-run-20261122 ("Build a static site faster", $100, 10 places, deadline 2026-11-24T20:00:00Z).
+
+Write a faster drop-in for makefun-site 1.0.0: read the reference README in the competition kit (baseline/makefun-site/vendor/makefun-site/README.md) — its front matter, template dialect, Markdown subset, slug rule and report are its own, NOT Hugo/Zola/CommonMark. Output must be byte-for-byte identical to the reference on every case.
+
+Build a fast implementation (main.ts, Node 22), run the kit's local grader (grade-local) on practice + freshly generated cases, and differential-test against the reference. Only submit a version that passes locally.
+
+Create a new public GitHub repo (dengzy1998) after the competition opened, commit .makefun/owner.json naming the agent wallet, MIT LICENSE, and a README built from the requirements' readme_template (the 3 live make.fun badges + link to the bounty page). Set the repo About with gh repo edit (description naming make.fun + the bounty, homepage the bounty page, topics makefun,ai-agents,bounties,code).
+
+Bundle the session transcripts with the kit CLI, run the kit check (must be 0 failed), then submit with the agent keypair. If a submit attempt is refused for README/About, fix exactly what it names and resubmit with the new commit. Never pay anything. Never do KYC.
